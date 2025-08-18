@@ -70,20 +70,20 @@ body{padding-top:80px}
 .testimonials{position:relative}
 .t-viewport{position:relative;overflow:hidden}
 .t-track{display:flex;gap:16px;transition:transform .5s ease;will-change:transform}
-.t-item{flex:0 0 33.333%}
-@media (max-width:1024px){.t-item{flex:0 0 50%}}
+.t-item{flex:0 0 28%}
+@media (max-width:1024px){.t-item{flex:0 0 48%}}
 @media (max-width:768px){.t-item{flex:0 0 100%}}
-.t-card{height:100%;background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);padding:24px}
-.t-stars{display:flex;justify-content:center;margin-bottom:6px;color:#DDB23F;font-size:1.05rem;letter-spacing:2px}
-.t-quote{font-size:1.05rem;line-height:1.8;font-style:italic;color:#333;margin:6px 0 10px}
+.t-card{height:100%;background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.06);padding:18px}
+.t-stars{display:flex;justify-content:center;margin-bottom:4px;color:#DDB23F;font-size:.95rem;letter-spacing:2px}
+.t-quote{font-size:.98rem;line-height:1.7;font-style:italic;color:#333;margin:6px 0 10px}
 .t-author{display:flex;justify-content:center;gap:8px;align-items:center;color:#666}
 .t-name{color:#cfa73b;font-weight:700}
-.t-nav{position:absolute;top:50%;transform:translateY(-50%);background:#fff;border:1px solid #e6e6e6;box-shadow:0 6px 14px rgba(0,0,0,.08);color:#cfa73b;border-radius:999px;width:44px;height:44px;font-size:22px;line-height:44px;text-align:center;cursor:pointer}
-.t-nav.prev{left:-8px}
-.t-nav.next{right:-8px}
+.t-nav{position:absolute;top:50%;transform:translateY(-50%);background:#fff;border:1px solid #e6e6e6;box-shadow:0 6px 14px rgba(0,0,0,.08);color:#cfa73b;border-radius:999px;width:44px;height:44px;font-size:22px;line-height:44px;text-align:center;cursor:pointer;z-index:5}
+.t-nav.prev{left:10px}
+.t-nav.next{right:10px}
 .t-nav:hover{filter:brightness(.98)}
-.t-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
-.t-dots button{width:8px;height:8px;border-radius:50%;border:0;background:#d7d7d7;cursor:pointer}
+.t-dots{display:flex;justify-content:center;gap:10px;margin-top:14px}
+.t-dots button{width:10px;height:10px;border-radius:50%;border:0;background:#d7d7d7;cursor:pointer}
 .t-dots button.active{background:#cfa73b}
 .about p,.space p,.events p{text-align:justify}
 /* === Mariage & Événements avec image de fond === */
