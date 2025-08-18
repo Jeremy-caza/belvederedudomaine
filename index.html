@@ -66,17 +66,25 @@ footer{background:#333;color:#fff;padding:20px 0}
 /* Responsive */
 @media (max-width:768px){.menu-toggle{display:block}nav{position:absolute;top:100%;right:0;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.1);display:none}nav.open{display:block}.nav-links{flex-direction:column;padding:10px 20px;gap:10px}}
 body{padding-top:80px}
-/* Avis carousel */
-.avis-carousel{position:relative;max-width:100%;margin:auto;padding:40px 0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.carousel-track-container{overflow:hidden;width:100%}
-.carousel-track{display:flex;transition:transform .5s ease;flex-wrap:nowrap}
-.avis-card{flex:0 0 33.33%;max-width:33.33%;box-sizing:border-box;padding:20px;margin:0 10px;background:#fff;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center}
-.avis-card p{font-size:1rem;font-style:italic;margin-bottom:10px}
-.avis-card h4{color:#666;font-weight:600}
-.carousel-btn{background:#cfa73b;color:#fff;border:0;border-radius:50%;width:40px;height:40px;font-size:1.2rem;cursor:pointer;transition:background .3s;z-index:2}
-.carousel-btn:hover{background:#b5972c}
-@media (max-width:1024px){.avis-card{flex:0 0 50%;max-width:50%}}
-@media (max-width:768px){.avis-card{flex:0 0 100%;max-width:100%}.avis-carousel{flex-direction:column}.carousel-btn{margin:10px}}
+/* ===== Testimonials (multi-cards, pro) ===== */
+.testimonials{position:relative}
+.t-viewport{position:relative;overflow:hidden}
+.t-track{display:flex;gap:16px;transition:transform .5s ease;will-change:transform}
+.t-item{flex:0 0 33.333%}
+@media (max-width:1024px){.t-item{flex:0 0 50%}}
+@media (max-width:768px){.t-item{flex:0 0 100%}}
+.t-card{height:100%;background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);padding:24px}
+.t-stars{display:flex;justify-content:center;margin-bottom:6px;color:#DDB23F;font-size:1.05rem;letter-spacing:2px}
+.t-quote{font-size:1.05rem;line-height:1.8;font-style:italic;color:#333;margin:6px 0 10px}
+.t-author{display:flex;justify-content:center;gap:8px;align-items:center;color:#666}
+.t-name{color:#cfa73b;font-weight:700}
+.t-nav{position:absolute;top:50%;transform:translateY(-50%);background:#fff;border:1px solid #e6e6e6;box-shadow:0 6px 14px rgba(0,0,0,.08);color:#cfa73b;border-radius:999px;width:44px;height:44px;font-size:22px;line-height:44px;text-align:center;cursor:pointer}
+.t-nav.prev{left:-8px}
+.t-nav.next{right:-8px}
+.t-nav:hover{filter:brightness(.98)}
+.t-dots{display:flex;justify-content:center;gap:8px;margin-top:14px}
+.t-dots button{width:8px;height:8px;border-radius:50%;border:0;background:#d7d7d7;cursor:pointer}
+.t-dots button.active{background:#cfa73b}
 .about p,.space p,.events p{text-align:justify}
 /* === Mariage & Événements avec image de fond === */
 .events.hero-style{position:relative;background:url('imagesdomaine/photo12.jpg') center/cover no-repeat;color:#fff;padding:72px 0;z-index:1}
@@ -213,35 +221,7 @@ html,body{overflow-x:hidden}
     </section>
 
     <!-- AVIS CLIENTS -->
-    <section id="avis" class="reviews">
-        <div class="container">
-            <h2 class="fade-in">Avis Clients</h2>
-            <div class="avis-carousel">
-  <button class="carousel-btn prev">←</button>
-  <div class="carousel-track-container">
-    <div class="carousel-track">
-      <div class="avis-card">
-        <p>"Un lieu absolument magnifique pour notre mariage ! Propriétaires à l’écoute. Nos invités ont été conquis par la beauté du paysage et l’atmosphère chaleureuse qui s’en dégage."</p>
-        <h4>- Pierre MATA</h4>
-      </div>
-      <div class="avis-card">
-        <p>"Exceptionnel. Cadre excellent, parfait pour un moment de détente et d’apaisement."</p>
-        <h4>- Louane LAFLEUR</h4>
-      </div>
-      <div class="avis-card">
-        <p>"Superbe endroit pour fêter un événement en famille ! De plus vous pouvez faire dormir sur place plusieurs personnes. J’adoreeee et les patrons très gentils, accueillants et se démènent pour que tout se passe bien !"</p>
-        <h4>- Zaza DBR</h4>
-      </div>
-      <div class="avis-card">
-        <p>"Nous avons célébré notre mariage ce 3 mai 2025 au BELVÉDÈRE DU DOMAINE à Tournay, un lieu hors du temps et magique. La vue sur la chaîne des Pyrénées y est à couper le souffle et nos convives, venant pour la plupart de région parisienne, ont été éblouis!"</p>
-        <h4>- Sylvie FERNANDES</h4>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-btn next">→</button>
-</div>
-</div>
-</section>
+    <section id="avis" class="reviews"><div class="container"><h2 class="fade-in">Avis Clients</h2><div class="testimonials"><div class="t-viewport"><button class="t-nav prev" aria-label="Avis précédent">‹</button><div class="t-track"><article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Un lieu absolument magnifique pour notre mariage ! Propriétaires à l’écoute. Nos invités ont été conquis par la beauté du paysage et l’atmosphère chaleureuse qui s’en dégage."</p><div class="t-author"><span class="t-name">— Pierre MATA</span></div></div></article><article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Exceptionnel. Cadre excellent, parfait pour un moment de détente et d’apaisement."</p><div class="t-author"><span class="t-name">— Louane LAFLEUR</span></div></div></article><article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Superbe endroit pour fêter un événement en famille ! De plus vous pouvez faire dormir sur place plusieurs personnes. J’adoreeee et les patrons très gentils, accueillants et se démènent pour que tout se passe bien !"</p><div class="t-author"><span class="t-name">— Zaza DBR</span></div></div></article><article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Nous avons célébré notre mariage ce 3 mai 2025 au BELVÉDÈRE DU DOMAINE à Tournay, un lieu hors du temps et magique. La vue sur la chaîne des Pyrénées y est à couper le souffle et nos convives, venant pour la plupart de région parisienne, ont été éblouis !"</p><div class="t-author"><span class="t-name">— Sylvie FERNANDES</span></div></div></article></div><button class="t-nav next" aria-label="Avis suivant">›</button></div><div class="t-dots" aria-label="Pagination avis"></div></div></section>
 
     <!-- ACCÈS & CONTACT -->
     <section id="contact" class="contact">
@@ -337,41 +317,21 @@ faders.forEach(el => observer.observe(el));
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const track = document.querySelector('.carousel-track');
-const prevBtn = document.querySelector('.carousel-btn.prev');
-const nextBtn = document.querySelector('.carousel-btn.next');
-let currentIndex = 0;
-
-function updateCarousel() {
-  const container = document.querySelector('.carousel-track-container');
-  const card = document.querySelector('.avis-card');
-  const cardWidth = card.offsetWidth + 20;
-  const maxTranslate = track.scrollWidth - container.offsetWidth;
-  let translate = currentIndex * cardWidth;
-  if (translate > maxTranslate) {
-    currentIndex = Math.floor(maxTranslate / cardWidth);
-    translate = currentIndex * cardWidth;
-  }
-  track.style.transform = `translateX(-${translate}px)`;
-}
-
-nextBtn.addEventListener('click', () => {
-  const totalCards = document.querySelectorAll('.avis-card').length;
-  const visibleCards = Math.floor(document.querySelector('.carousel-track-container').offsetWidth / (document.querySelector('.avis-card').offsetWidth + 20));
-  if (currentIndex < totalCards - visibleCards) {
-    currentIndex++;
-    updateCarousel();
-  }
-});
-
-prevBtn.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
-});
-
-window.addEventListener('resize', updateCarousel);
+// Testimonials slider (multi-cards)
+const tViewport=document.querySelector('.t-viewport');
+const tTrack=document.querySelector('.t-track');
+const tItems=[...document.querySelectorAll('.t-item')];
+const tPrev=document.querySelector('.t-nav.prev');
+const tNext=document.querySelector('.t-nav.next');
+const tDots=document.querySelector('.t-dots');
+let tIndex=0;
+function visibleCount(){const w=tViewport.clientWidth;const itemW=tItems[0]?.clientWidth||w;return Math.max(1,Math.floor(w/itemW));}
+function gap(){const g=getComputedStyle(tTrack).gap||'0';return parseFloat(g)||0;}
+function update(){const itemW=tItems[0]?.clientWidth||tViewport.clientWidth;const step=itemW+gap();const max=Math.max(0,tItems.length-visibleCount());if(tIndex>max)tIndex=max;if(tIndex<0)tIndex=0;tTrack.style.transform=`translateX(-${tIndex*step}px)`;updateDots();}
+function updateDots(){const pages=Math.max(1,tItems.length-visibleCount()+1);if(tDots.childElementCount!==pages){tDots.innerHTML='';for(let i=0;i<pages;i++){const b=document.createElement('button');if(i===0)b.classList.add('active');b.addEventListener('click',()=>{tIndex=i;update();});tDots.appendChild(b);}}[...tDots.children].forEach((d,idx)=>d.classList.toggle('active',idx===tIndex));}
+tPrev?.addEventListener('click',()=>{tIndex--;update();});
+tNext?.addEventListener('click',()=>{tIndex++;update();});
+window.addEventListener('resize',update);update();
 </script>
 </body>
 </html>
