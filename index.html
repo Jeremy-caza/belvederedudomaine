@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Belvédère du Domaine - Domaine d'Exception</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Belvédère du Domaine - Domaine d'Exception</title>
+  <meta name="description" content="Lieu de réception à Tournay (Hautes-Pyrénées) : mariages, réceptions, séminaires, hébergements sur place, vue Pyrénées. Contactez Le Belvédère du Domaine.">
+  <meta name="author" content="Le Belvédère du Domaine">
+
+  <!-- Canonique -->
+  <link rel="canonical" href="https://belvederedudomaine.fr/">
+
+  <!-- Favicons complets -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#DDB23F">
+  <meta name="msapplication-TileColor" content="#DDB23F">
+  <meta name="theme-color" content="#DDB23F">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Le Belvédère du Domaine — Mariages & Réceptions">
+  <meta property="og:description" content="Domaine d'exception à Tournay (65) : vue panoramique, espaces modulables, hébergement sur place.">
+  <meta property="og:image" content="https://belvederedudomaine.fr/imagesdomaine/og-belvedere-1200x630.jpg">
+  <meta property="og:url" content="https://belvederedudomaine.fr/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Perf -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="imagesdomaine/acceuil.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
 /* ==== CSS condensé (règles sur une ligne) ==== */
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Open Sans',sans-serif;line-height:1.6;color:#333;background:#fff}
@@ -96,142 +127,135 @@ body{padding-top:80px}
 .events-content .event-list li{background:rgba(255,255,255,.2);color:#fff;padding:8px 16px;border-radius:20px;font-weight:600;font-size:.95rem;transition:background .3s}
 .events-content .event-list li:hover{background:rgba(255,255,255,.4)}
 html,body{overflow-x:hidden}
-</style>
+  </style>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-  <div class="container header-content">
-    
-    <div class="logo">
-      <a href="#accueil">
-        <img src="imagesdomaine/logo.jpg" alt="Le Belvédère du Domaine">
-      </a>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="#accueil"><img src="imagesdomaine/logo.jpg" alt="Le Belvédère du Domaine"></a>
+      </div>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#histoire">Notre Histoire</a></li>
+          <li><a href="#espaces">Les Espaces</a></li>
+          <li><a href="#evenements">Événements</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-    
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#histoire">Notre Histoire</a></li>
-        <li><a href="#espaces">Les Espaces</a></li>
-        <li><a href="#evenements">Événements</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#avis">Avis</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  </header>
 
-  </div> <!-- ✅ Fermeture correcte ici -->
-</header>
-
-    <!-- ACCUEIL -->
-    <section id="accueil" class="hero">
-        <div class="hero-content fade-in">
-            <h1>Le Belvédère du Domaine</h1>
-            <p>Un domaine exceptionnel pour des événements exceptionnels</p>
-            <a href="#histoire" class="btn">Découvrir</a>
-        </div>
-        <!-- Utilisez une image de fond pour la section hero via CSS -->
-    </section>
-
-    <!-- NOTRE HISTOIRE -->
-    <section id="histoire" class="about fade-in">
-        <div class="container">
-            <h2>Notre Histoire</h2>
-            <p>Un lieu d’exception niché au cœur de la nature, dans un cadre empreint de charme et de sérénité. Cette ancienne ferme, magnifiquement restaurée, s’étend sur un parc privé de 80 hectares, mêlant coteaux pittoresques, forêts de chênes majestueux et prairies verdoyantes à perte de vue. Avec son toit élégant et ses pierres restaurées, la bâtisse offre un écrin authentique et raffiné pour vos célébrations. Depuis le domaine, une vue panoramique sublime se déploie, embrassant les vallées jusqu’aux sommets des Pyrénées, avec le mythique Pic du Midi qui dessine l’horizon. Ce décor naturel enchanteur et cette ambiance unique feront de votre évènement un moment inoubliable, empreint de la beauté des lieux et de l’atmosphère paisible du Sud-Ouest.</p>
-        </div>
-    </section>
-
-    <!-- LES ESPACES -->
-    <section id="espaces" class="espaces">
-        <div class="container">
-            <h2 class="fade-in">Les Espaces</h2>
-            <div class="space-grid">
-                <div class="space fade-in">
-                    <img src="imagesdomaine/salle.jpg" alt="Salle de réception">
-                    <h3>Salle de Réception</h3>
-                    <p>"Située dans le prolongement naturel de la maison, la salle de réception allie charme authentique et confort moderne. Spacieuse et lumineuse, elle accueille mariages, fêtes familiales ou événements professionnels dans une atmosphère chaleureuse. Une pergola couverte attenante prolonge l’espace vers l’extérieur, idéale pour les cocktails ou les moments conviviaux en plein air."</p>
-                </div>
-                <div class="space fade-in">
-                    <img src="imagesdomaine/bergerie.jpg" alt="Bergerie">
-                    <h3>Bergerie</h3>
-                    <p>"Avec sa terrasse panoramique face aux sommets pyrénéens, la bergerie offre un cadre idyllique pour vos apéritifs et repas intimistes. Son espace bar au rez-de-chaussée, complété par une salle de bain, en fait un lieu parfait pour partager des moments conviviaux dans un décor naturel et apaisant."</p>
-                </div>
-                <div class="space fade-in">
-                    <img src="imagesdomaine/ext.jpg" alt="Extérieur & Jardin">
-                    <h3>Extérieur & Jardin</h3>
-                    <p>"À l’extérieur, tout invite à la détente et à la convivialité. Deux terrasses aménagées, un terrain de pétanque, un vaste jardin fleuri… le tout ouvert sur une vue imprenable sur la chaîne des Pyrénées. Entre champs, plantes, mobilier d’extérieur et accès pratique en voiture avec parking, chaque espace a été pensé pour savourer pleinement le cadre naturel et apaisant du domaine."</p>
-                </div>
-                <div class="space fade-in">
-                    <img src="imagesdomaine/chambre.jpg" alt="Maison et chambres">
-                    <h3>Maison & Chambres</h3>
-                    <p>La maison abrite plusieurs chambres, chacune pensée avec soin pour offrir confort, charme et tranquillité. Parmi elles, une suite d’exception, confidentielle, que nous dévoilons rarement, mais dont la magie ne laisse personne indifférent. Ici, chaque détail a été choisi pour créer une atmosphère chaleureuse et hors du temps."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MARIAGES & ÉVÉNEMENTS -->
-   <section id="evenements" class="events hero-style">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="events-content">
-      <h2>Mariages & Événements</h2>
-      <p>"Mariages intimistes ou célébrations grandioses, séminaires professionnels, concerts en plein air, retraites bien-être ou même tournages... Le domaine s’adapte à toutes vos envies. Grâce à ses différents espaces, à son cadre naturel inspirant et à ses installations pensées pour recevoir, il devient le lieu idéal pour imaginer, créer, partager. Que ce soit pour vivre un moment fort entre proches ou donner vie à un projet ambitieux, ici tout est possible. Il ne reste qu’à laisser parler votre imagination."</p>
-      <ul class="event-list">
-        <li>Mariages</li>
-        <li>Baptêmes</li>
-        <li>Anniversaires</li>
-        <li>Fêtes familiales </li>
-        <li>Enterrements de vie de célibataire </li>
-        <li>Baby shower </li>
-        <li>Team building</li>
-        <li>Séminaires</li>
-        <li>Conférences </li>
-        <li>Soirées d’entreprise / galas</li>
-        <li>Conférences culturelles</li>
-        <li>Shooting photo</li>
-        <li>Séjours bien-être</li>
-        <li>Événements associatifs </li>
-        <li>Bootcamps fitness </li>
-      </ul>
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="hero-content fade-in">
+      <h1>Le Belvédère du Domaine</h1>
+      <p>Un domaine exceptionnel pour des événements exceptionnels</p>
+      <a href="#histoire" class="btn">Découvrir</a>
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- GALERIE -->
-    <section id="galerie" class="galerie">
-        <div class="container">
-            <h2 class="fade-in">Galerie</h2>
-            <div class="gallery-grid">
-                <img src="imagesdomaine/photo1.jpg" alt="Galerie 1" class="fade-in">
-                <img src="imagesdomaine/photo2.jpg" alt="Galerie 2" class="fade-in">
-                <img src="imagesdomaine/photo3.jpg" alt="Galerie 3" class="fade-in">
-                <img src="imagesdomaine/photo4.jpg" alt="Galerie 4" class="fade-in">
-                <img src="imagesdomaine/photo5.jpg" alt="Galerie 5" class="fade-in">
-                <img src="imagesdomaine/photo6.jpg" alt="Galerie 6" class="fade-in">
-                <img src="imagesdomaine/photo7.jpg" alt="Galerie 7" class="fade-in">
-                <img src="imagesdomaine/photo8.jpg" alt="Galerie 8" class="fade-in">
-                <img src="imagesdomaine/photo9.jpg" alt="Galerie 9" class="fade-in">
-                <img src="imagesdomaine/photo10.jpg" alt="Galerie 10" class="fade-in">
-                <img src="imagesdomaine/photo11.jpg" alt="Galerie 11" class="fade-in">
-                <img src="imagesdomaine/photo12.jpg" alt="Galerie 12" class="fade-in">
-                <img src="imagesdomaine/photo13.jpg" alt="Galerie 13" class="fade-in">
-                <img src="imagesdomaine/photo14.jpg" alt="Galerie 14" class="fade-in">
-                <img src="imagesdomaine/photo15.jpg" alt="Galerie 15" class="fade-in">
-                <img src="imagesdomaine/photo16.jpg" alt="Galerie 16" class="fade-in">
-                <img src="imagesdomaine/photo17.jpg" alt="Galerie 17" class="fade-in">
-                <img src="imagesdomaine/photo20.jpg" alt="Galerie 18" class="fade-in">
-                <img src="imagesdomaine/photo19.jpg" alt="Galerie 19" class="fade-in">
-                <img src="imagesdomaine/photo21.jpg" alt="Galerie 20" class="fade-in">
-            </div>
+  <!-- NOTRE HISTOIRE -->
+  <section id="histoire" class="about fade-in">
+    <div class="container">
+      <h2>Notre Histoire</h2>
+      <p>Un lieu d’exception niché au cœur de la nature, dans un cadre empreint de charme et de sérénité. Cette ancienne ferme, magnifiquement restaurée, s’étend sur un parc privé de 80 hectares, mêlant coteaux pittoresques, forêts de chênes majestueux et prairies verdoyantes à perte de vue. Avec son toit élégant et ses pierres restaurées, la bâtisse offre un écrin authentique et raffiné pour vos célébrations. Depuis le domaine, une vue panoramique sublime se déploie, embrassant les vallées jusqu’aux sommets des Pyrénées, avec le mythique Pic du Midi qui dessine l’horizon. Ce décor naturel enchanteur et cette ambiance unique feront de votre évènement un moment inoubliable, empreint de la beauté des lieux et de l’atmosphère paisible du Sud-Ouest.</p>
+    </div>
+  </section>
+
+  <!-- LES ESPACES -->
+  <section id="espaces" class="espaces">
+    <div class="container">
+      <h2 class="fade-in">Les Espaces</h2>
+      <div class="space-grid">
+        <div class="space fade-in">
+          <img src="imagesdomaine/salle.jpg" alt="Salle de réception">
+          <h3>Salle de Réception</h3>
+          <p>"Située dans le prolongement naturel de la maison, la salle de réception allie charme authentique et confort moderne. Spacieuse et lumineuse, elle accueille mariages, fêtes familiales ou événements professionnels dans une atmosphère chaleureuse. Une pergola couverte attenante prolonge l’espace vers l’extérieur, idéale pour les cocktails ou les moments conviviaux en plein air."</p>
         </div>
-    </section>
+        <div class="space fade-in">
+          <img src="imagesdomaine/bergerie.jpg" alt="Bergerie">
+          <h3>Bergerie</h3>
+          <p>"Avec sa terrasse panoramique face aux sommets pyrénéens, la bergerie offre un cadre idyllique pour vos apéritifs et repas intimistes. Son espace bar au rez-de-chaussée, complété par une salle de bain, en fait un lieu parfait pour partager des moments conviviaux dans un décor naturel et apaisant."</p>
+        </div>
+        <div class="space fade-in">
+          <img src="imagesdomaine/ext.jpg" alt="Extérieur & Jardin">
+          <h3>Extérieur & Jardin</h3>
+          <p>"À l’extérieur, tout invite à la détente et à la convivialité. Deux terrasses aménagées, un terrain de pétanque, un vaste jardin fleuri… le tout ouvert sur une vue imprenable sur la chaîne des Pyrénées. Entre champs, plantes, mobilier d’extérieur et accès pratique en voiture avec parking, chaque espace a été pensé pour savourer pleinement le cadre naturel et apaisant du domaine."</p>
+        </div>
+        <div class="space fade-in">
+          <img src="imagesdomaine/chambre.jpg" alt="Maison et chambres">
+          <h3>Maison & Chambres</h3>
+          <p>La maison abrite plusieurs chambres, chacune pensée avec soin pour offrir confort, charme et tranquillité. Parmi elles, une suite d’exception, confidentielle, que nous dévoilons rarement, mais dont la magie ne laisse personne indifférent. Ici, chaque détail a été choisi pour créer une atmosphère chaleureuse et hors du temps."</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   <!-- AVIS CLIENTS -->
-<section id="avis" class="reviews"><div class="container"><h2 class="fade-in">Avis Clients</h2><div class="testimonials"><div class="t-viewport"><button class="t-nav prev" aria-label="Avis précédent">‹</button><div class="t-track">
+  <!-- MARIAGES & ÉVÉNEMENTS -->
+  <section id="evenements" class="events hero-style">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="events-content">
+        <h2>Mariages & Événements</h2>
+        <p>"Mariages intimistes ou célébrations grandioses, séminaires professionnels, concerts en plein air, retraites bien-être ou même tournages... Le domaine s’adapte à toutes vos envies. Grâce à ses différents espaces, à son cadre naturel inspirant et à ses installations pensées pour recevoir, il devient le lieu idéal pour imaginer, créer, partager. Que ce soit pour vivre un moment fort entre proches ou donner vie à un projet ambitieux, ici tout est possible. Il ne reste qu’à laisser parler votre imagination."</p>
+        <ul class="event-list">
+          <li>Mariages</li>
+          <li>Baptêmes</li>
+          <li>Anniversaires</li>
+          <li>Fêtes familiales </li>
+          <li>Enterrements de vie de célibataire </li>
+          <li>Baby shower </li>
+          <li>Team building</li>
+          <li>Séminaires</li>
+          <li>Conférences </li>
+          <li>Soirées d’entreprise / galas</li>
+          <li>Conférences culturelles</li>
+          <li>Shooting photo</li>
+          <li>Séjours bien-être</li>
+          <li>Événements associatifs </li>
+          <li>Bootcamps fitness </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="galerie">
+    <div class="container">
+      <h2 class="fade-in">Galerie</h2>
+      <div class="gallery-grid">
+        <img src="imagesdomaine/photo1.jpg" alt="Galerie 1" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo2.jpg" alt="Galerie 2" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo3.jpg" alt="Galerie 3" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo4.jpg" alt="Galerie 4" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo5.jpg" alt="Galerie 5" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo6.jpg" alt="Galerie 6" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo7.jpg" alt="Galerie 7" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo8.jpg" alt="Galerie 8" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo9.jpg" alt="Galerie 9" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo10.jpg" alt="Galerie 10" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo11.jpg" alt="Galerie 11" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo12.jpg" alt="Galerie 12" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo13.jpg" alt="Galerie 13" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo14.jpg" alt="Galerie 14" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo15.jpg" alt="Galerie 15" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo16.jpg" alt="Galerie 16" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo17.jpg" alt="Galerie 17" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo20.jpg" alt="Galerie 18" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo19.jpg" alt="Galerie 19" class="fade-in" loading="lazy" width="1200" height="800">
+        <img src="imagesdomaine/photo21.jpg" alt="Galerie 20" class="fade-in" loading="lazy" width="1200" height="800">
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS CLIENTS -->
+  <section id="avis" class="reviews"><div class="container"><h2 class="fade-in">Avis Clients</h2><div class="testimonials"><div class="t-viewport"><button class="t-nav prev" aria-label="Avis précédent">‹</button><div class="t-track">
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Un lieu absolument magnifique pour notre mariage ! Propriétaires à l’écoute. Nos invités ont été conquis par la beauté du paysage et l’atmosphère chaleureuse qui s’en dégage."</p><div class="t-author"><span class="t-name">— Pierre MATA</span></div></div></article>
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Exceptionnel. Cadre excellent, parfait pour un moment de détente et d’apaisement."</p><div class="t-author"><span class="t-name">— Louane LAFLEUR</span></div></div></article>
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Superbe endroit pour fêter un événement en famille ! De plus vous pouvez faire dormir sur place plusieurs personnes. J’adoreeee et les patrons très gentils, accueillants et se démènent pour que tout se passe bien !"</p><div class="t-author"><span class="t-name">— Zaza DBR</span></div></div></article>
@@ -239,120 +263,130 @@ html,body{overflow-x:hidden}
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Un lieu hors du commun, notre mariage fut un pur bonheur, ses espaces extérieurs sont justes sublimes, l’intérieur incroyable… les chambres avec la location de linge de lit sont vraiment un plus quand les gens viennent de loin , cela permet de vraiment profiter du week-end tous ensemble. Un grand merci aux propriétaires très à l’écoute. On le conseille les yeux fermés."</p><div class="t-author"><span class="t-name">— Amandine Vigny</span></div></div></article>
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Magnifique domaine, personnel aux petits soins, très jolie vue, petit déjeuner super, dîner original, seul point négatif la route que l’on doit emprunter avec les voiturettes très cabossée et le dos s’en souvient ! Bravo à toute l’équipe !!!"</p><div class="t-author"><span class="t-name">— Jocelyne Perrin</span></div></div></article>
 <article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Un domaine exceptionnel. La vue est magnifique . Tout est prévu pour passer un très beau moment . Tables chaises cuisine et même dortoir à disposition. Les propriétaires sont très gentils , disponibles et réactifs. La salle de réception est magnifique . Les travaux de rénovations de cet hiver sont merveilleux. Je recommande sans hésitation. Milles merci de nous avoir permis d’avoir un super mariage."</p><div class="t-author"><span class="t-name">— Marine Lego</span></div></div></article>
-<article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Superbe domaine où nous avons réalisé notre mariage en septembre, la salle est très bien, la disposition sur les photos était pour 70 personnes et pour danser nous avons enlever 2 tables. L’apéro à l’extérieur avec de nombreux mange debout, la possibilité de fermer la pergola dehors le soir quand il fait frais et des chauffages sont fournis. Nous avons fais dormir 40 personnes sur le domaine c’est un énorme avantage. Les propriétaires sont à l’écoute et très disponible, il sont en constante amélioration du domaine ce qui est vraiment un plus. Nous recommandons ce domaine où nous avons passez un merveilleux moment."</p><div class="t-author"><span class="t-name">— Thomas Santolaria</span></div></div></article>
+<article class="t-item"><div class="t-card"><div class="t-stars" aria-label="Note 5 sur 5">★★★★★</div><p class="t-quote">"Superbe domaine où nous avons réalisé notre mariage en septembre. L’apéro à l’extérieur avec de nombreux mange debout, la possibilité de fermer la pergola dehors le soir quand il fait frais et des chauffages sont fournis. Nous avons fais dormir 40 personnes sur le domaine c’est un énorme avantage. Nous recommandons ce domaine où nous avons passez un merveilleux moment."</p><div class="t-author"><span class="t-name">— Thomas Santolaria</span></div></div></article>
 </div><button class="t-nav next" aria-label="Avis suivant">›</button></div><div class="t-dots" aria-label="Pagination avis"></div></div></div></section>
 
-    <!-- ACCÈS & CONTACT -->
-    <section id="contact" class="contact">
-       <div class="container contact-wrapper fade-in">
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.925654431989!2d0.28193437499192237!3d43.19007078226318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cba66648e755%3A0x7f5bcb7256ee3d29!2sLe%20Belv%C3%A9d%C3%A8re%20du%20Domaine!5e0!3m2!1sfr!2sfr!4v1753635976674!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- ACCÈS & CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-wrapper fade-in">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.925654431989!2d0.28193437499192237!3d43.19007078226318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cba66648e755%3A0x7f5bcb7256ee3d29!2sLe%20Belv%C3%A9d%C3%A8re%20du%20Domaine!5e0!3m2!1sfr!2sfr!4v1753635976674!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="form-area">
+        <form>
+          <label>Nom
+            <input type="text" name="nom" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+        <div class="coords">
+          <p><strong>📍 2 Chem. de la Lande, 65190 Tournay</strong></p>
+          <p><strong>📞 <a href="tel:+33637210400">06 37 21 04 00</a></strong></p>
+          <p><strong>✉️ <a href="mailto:belevederedudomaine@gmail.com">belevederedudomaine@gmail.com</a></strong></p>
+          <p><em>📆 Janvier à Décembre</em></p>
+        </div>
+      </div>
     </div>
-    <div class="form-area">
-                <form>
-                    <label>Nom
-                        <input type="text" name="nom" required>
-                    </label>
-                    <label>Email
-                        <input type="email" name="email" required>
-                    </label>
-                    <label>Message
-                        <textarea name="message" rows="5" required></textarea>
-                    </label>
-                    <button type="submit" class="btn">Envoyer</button>
-                </form>
-              <div class="coords">
-  <p><strong>📍 2 Chem. de la Lande, 65190 Tournay</strong></p>
-  <p><strong>📞 <a href="tel:+33637210400">06 37 21 04 00</a></strong></p>
-  <p><strong>✉️ <a href="mailto:belevederedudomaine@gmail.com">belevederedudomaine@gmail.com</a></strong></p>
-  <p><em>📆 Janvier à Décembre</em></p>
-</div>
-            </div>
-        </div>
-    </section>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; <span id="year"></span> Belvédère du Domaine - Tous droits réservés.</p>
-           <div class="footer-links">
-  <a href="mentions-legales.html">Mentions légales</a>
-  <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
-    <img src="imagesbirdhunter/facebook.png" alt="Facebook" class="social-ico" width="24" height="24"></a>
-  <a href="https://www.instagram.com/belvederedudomaine/" target="_blank">Instagram
-   <img src="imagesbirdhunter/IG.png" alt="Instagram" class="social-ico" width="24" height="24"></a></a>
-</div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Belvédère du Domaine - Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="https://www.facebook.com/people/Bird-Hunter/61558949325470/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+          <img src="imagesbirdhunter/facebook.png" alt="Facebook" class="social-ico" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/belvederedudomaine/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+          <img src="imagesbirdhunter/IG.png" alt="Instagram" class="social-ico" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </footer>
 
-<script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// Sticky header (class handled by CSS)
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 50);
-});
-
-// Menu toggle for mobile
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('header nav');
-if (menuToggle && nav) {
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-}
-
-// Fermer le menu mobile si on clique en dehors
-document.addEventListener('click', function (e) {
-  const isClickInsideMenu = nav.contains(e.target);
-  const isClickOnToggle = menuToggle.contains(e.target);
-
-  if (!isClickInsideMenu && !isClickOnToggle && nav.classList.contains('open')) {
-    nav.classList.remove('open');
+  <!-- JSON-LD Local Business (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Le Belvédère du Domaine",
+    "url": "https://belvederedudomaine.fr/",
+    "image": "https://belvederedudomaine.fr/imagesdomaine/og-belvedere-1200x630.jpg",
+    "telephone": "+33637210400",
+    "description": "Lieu de réception dans les Hautes-Pyrénées : mariages, réceptions, séminaires. Vue panoramique, espaces modulables, hébergement sur place.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Chem. de la Lande",
+      "postalCode": "65190",
+      "addressLocality": "Tournay",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.19007078226318,
+      "longitude": 0.28193437499192237
+    },
+    "sameAs": [
+      "https://www.instagram.com/belvederedudomaine/"
+    ]
   }
-});
+  </script>
 
-// Fade-in animation on scroll
-const faders = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target);
-    }
+  <script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(anchor.getAttribute('href'));
+      if (target) { target.scrollIntoView({ behavior: 'smooth' }); }
+    });
   });
-}, { threshold: 0.1 });
-
-faders.forEach(el => observer.observe(el));
-
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Testimonials slider (multi-cards)
-const tViewport=document.querySelector('.t-viewport');
-const tTrack=document.querySelector('.t-track');
-const tItems=[...document.querySelectorAll('.t-item')];
-const tPrev=document.querySelector('.t-nav.prev');
-const tNext=document.querySelector('.t-nav.next');
-const tDots=document.querySelector('.t-dots');
-let tIndex=0;
-function visibleCount(){const w=tViewport.clientWidth;const itemW=tItems[0]?.clientWidth||w;return Math.max(1,Math.floor(w/itemW));}
-function gap(){const g=getComputedStyle(tTrack).gap||'0';return parseFloat(g)||0;}
-function update(){const itemW=tItems[0]?.clientWidth||tViewport.clientWidth;const step=itemW+gap();const max=Math.max(0,tItems.length-visibleCount());if(tIndex>max)tIndex=max;if(tIndex<0)tIndex=0;tTrack.style.transform=`translateX(-${tIndex*step}px)`;updateDots();}
-function updateDots(){const pages=Math.max(1,tItems.length-visibleCount()+1);if(tDots.childElementCount!==pages){tDots.innerHTML='';for(let i=0;i<pages;i++){const b=document.createElement('button');if(i===0)b.classList.add('active');b.addEventListener('click',()=>{tIndex=i;update();});tDots.appendChild(b);}}[...tDots.children].forEach((d,idx)=>d.classList.toggle('active',idx===tIndex));}
-tPrev?.addEventListener('click',()=>{tIndex--;update();});
-tNext?.addEventListener('click',()=>{tIndex++;update();});
-window.addEventListener('resize',update);update();
-</script>
-</body>
-</html>
+  // Sticky header
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 50);
+  });
+  // Menu mobile
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('header nav');
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); });
+  }
+  document.addEventListener('click', function (e) {
+    const isClickInsideMenu = nav.contains(e.target);
+    const isClickOnToggle = menuToggle.contains(e.target);
+    if (!isClickInsideMenu && !isClickOnToggle && nav.classList.contains('open')) { nav.classList.remove('open'); }
+  });
+  // Fade-in
+  const faders = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  faders.forEach(el => observer.observe(el));
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // Testimonials slider
+  const tViewport=document.querySelector('.t-viewport');
+  const tTrack=document.querySelector('.t-track');
+  const tItems=[...document.querySelectorAll('.t-item')];
+  const tPrev=document.querySelector('.t-nav.prev');
+  const tNext=document.querySelector('.t-nav.next');
+  const tDots=document.querySelector('.t-dots');
+  let tIndex=0;
+  function visibleCount(){const w=tViewport.clientWidth;const itemW=tItems[0]?.clientWidth||w;return Math.max(1,Math.floor(w/itemW));}
+  function gap(){const g=getComputedStyle(tTrack).gap||'0';return parseFloat(g)||0;}
+  function update(){const itemW=tItems[0]?.clientWidth||tViewport.clientWidth;const step=itemW+gap();const max=Math.max(0,tItems.length-visibleCount());if(tIndex>max)tIndex=max;if(tIndex<0)tIndex=0;tTrack.style.transform=`translateX(-${tIndex*step}px)`;updateDots();}
+  function updateDots(){const pages=Math.max(1,tItems.length-visibleCount()+1);if(tDots.childElementCount!==pages){tDots.innerHTML='';for(let i=0;i<pages;i++){const b=document.createElement('button');if(i===0)b.classList.add('active');b.addEventListener('click',()=>{tIndex=i;update();});tDots.appendChild(b);}}[...tDots.children].forEach((d,idx)=>d.classList.toggle('active',idx===tIndex));}
+  tPrev?.addEventListener('click',()=>{tIndex--;update();});
+  tNext?.addEventListener('click',()=>{tIndex++;update();});
+  window.addEventListener('resize',update);update();
+  </script>
