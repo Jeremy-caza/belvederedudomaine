@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8">
+<title>Redirection…</title>
+<meta name="robots" content="noindex">
+<script>
+/* Mappe d’anciennes URL -> nouvelles pages (complète les routes utiles) */
+const routes = {
+  "/location-salle-de-mariage-hautes-pyrenees": "/",
+  "/location-de-salle-pour-": "/",               // adapte si tu as une page cible précise
+};
+/* normalise et redirige */
+const path = location.pathname.replace(/\/$/,'');
+const target = routes[path] || "/"; // fallback: accueil
+location.replace(target + location.search + location.hash);
+</script>
+<p>Redirection…</p>
