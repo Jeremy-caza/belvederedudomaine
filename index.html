@@ -127,6 +127,14 @@ body{padding-top:80px}
 .events-content .event-list li{background:rgba(255,255,255,.2);color:#fff;padding:8px 16px;border-radius:20px;font-weight:600;font-size:.95rem;transition:background .3s}
 .events-content .event-list li:hover{background:rgba(255,255,255,.4)}
 html,body{overflow-x:hidden}
+
+/* ==== CTA Visite Virtuelle (or, très visible) ==== */
+.btn-virtual{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:800;font-size:clamp(1rem,2.2vw,1.15rem);letter-spacing:.2px;background:#DDB23F;color:#1a1a1a;box-shadow:0 8px 24px rgba(0,0,0,.35), inset 0 0 0 1px rgba(0,0,0,.12);transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}
+.btn-virtual:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.45), inset 0 0 0 1px rgba(0,0,0,.12);filter:saturate(1.05)}
+.btn-virtual:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.btn-virtual svg{width:22px;height:22px;flex:0 0 22px;display:block}
+.sup-360{font-weight:900;margin-left:6px}
+@media (max-width:768px){.btn-virtual{width:100%;justify-content:center;padding:16px 20px}}
   </style>
 </head>
 <body>
@@ -221,6 +229,18 @@ html,body{overflow-x:hidden}
           <li>Événements associatifs </li>
           <li>Bootcamps fitness </li>
         </ul>
+
+        <!-- CTA VISITE VIRTUELLE (ajout) -->
+        <div style="margin-top:28px">
+          <a class="btn-virtual" href="https://my.matterport.com/show/?m=jhFozewMkQz&play=1&lang=fr&hl=2&brand=0&title=0&vr=0" target="_blank" rel="noopener" aria-label="Ouvrir la visite virtuelle 360 degrés dans un nouvel onglet">
+            <!-- Petit pictogramme type cercle fléché -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2a10 10 0 0 1 9.54 7h-2.17a8 8 0 1 0 1.02 4h-2.14l3.21-3.21L22 12V5h-7l2.21 2.21h2.1A9.97 9.97 0 0 0 12 2z"/>
+            </svg>
+            <span>Faire une visite virtuelle</span><span class="sup-360">360°</span>
+          </a>
+        </div>
+        <!-- /CTA VISITE VIRTUELLE -->
       </div>
     </div>
   </section>
