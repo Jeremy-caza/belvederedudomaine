@@ -134,6 +134,22 @@ html,body{overflow-x:hidden}
 .btn-virtual svg{width:22px;height:22px;flex:0 0 22px;display:block}
 .sup-360{font-weight:900;margin-left:6px}
 @media (max-width:768px){.btn-virtual{width:100%;justify-content:center;padding:16px 20px}}
+
+    /* === Bloc contact sans formulaire === */
+.contact-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.contact-card h3{color:#1a1a1a;margin-bottom:.75rem}
+.contact-card p{margin:.25rem 0 .75rem 0}
+.contact-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 8px 0}
+.btn-call,.btn-mail{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;font-weight:800;letter-spacing:.2px;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;white-space:nowrap}
+.btn-call{background:#DDB23F;color:#1a1a1a;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.btn-call:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.26)}
+.btn-mail{background:#fff;border:2px solid #DDB23F;color:#1a1a1a}
+.btn-mail:hover{transform:translateY(-1px);filter:saturate(1.05)}
+.btn-call svg,.btn-mail svg{width:20px;height:20px;display:block}
+.coords-big{margin-top:10px;line-height:1.9}
+.coords-big a{color:#cfa73b;text-decoration:underline;font-weight:700}
+@media (max-width:768px){.btn-call,.btn-mail{flex:1 1 100%;justify-content:center}}
+
   </style>
 </head>
 <body>
@@ -292,36 +308,31 @@ html,body{overflow-x:hidden}
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.925654431989!2d0.28193437499192237!3d43.19007078226318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cba66648e755%3A0x7f5bcb7256ee3d29!2sLe%20Belv%C3%A9d%C3%A8re%20du%20Domaine!5e0!3m2!1sfr!2sfr!4v1753635976674!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="form-area">
-        <form action="https://formsubmit.co/belvederedu65@gmail.com" method="POST">
-  <!-- Champs visibles -->
-  <label>Nom
-    <input type="text" name="nom" required autocomplete="name">
-  </label>
-  <label>Email
-    <input type="email" name="email" required autocomplete="email">
-  </label>
-  <label>Message
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-  <button type="submit" class="btn">Envoyer</button>
+     <div class="form-area">
+  <div class="contact-card">
+    <h3>Contactez-nous</h3>
+    <p>Pour toute question, devis ou visite&nbsp;: <br><strong>appelez-nous</strong> en appuyant sur le numéro ou <strong>écrivez-nous</strong> en appuyant sur l’adresse mail.</p>
 
-  <!-- Options FormSubmit -->
-  <input type="hidden" name="_subject" value="Nouveau message - Belvédère du Domaine">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <!-- Anti-spam (champ piège) -->
-  <input type="text" name="_honey" style="display:none">
-  <!-- Redirection après envoi (mets l’URL que tu veux) -->
-  <input type="hidden" name="_next" value="https://belvedere65.com/merci.html">
-</form>
-        <div class="coords">
-          <p><strong>📍 2 Chem. de la Lande, 65190 Tournay</strong></p>
-          <p><strong>📞 <a href="tel:+33637210400">06 37 21 04 00</a></strong></p>
-          <p><strong>✉️ <a href="mailto:belvederedu65@gmail.com">belvederedu65@gmail.com</a></strong></p>
-          <p><em>📆 Janvier à Décembre</em></p>
-        </div>
-      </div>
+    <div class="contact-buttons">
+      <a class="btn-call" href="tel:+33637210400" aria-label="Appeler le Belvédère du Domaine">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.07 22 2 13.93 2 3a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+        Appeler : 06&nbsp;37&nbsp;21&nbsp;04&nbsp;00
+      </a>
+
+      <a class="btn-mail" href="mailto:belvederedu65@gmail.com" aria-label="Écrire un email au Belvédère du Domaine">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+        Écrire : belvederedu65@gmail.com
+      </a>
+    </div>
+
+    <div class="coords-big">
+      <p><strong>📍 2 Chem. de la Lande, 65190 Tournay</strong></p>
+      <p><strong>📞 <a href="tel:+33637210400">06&nbsp;37&nbsp;21&nbsp;04&nbsp;00</a></strong></p>
+      <p><strong>✉️ <a href="mailto:belvederedu65@gmail.com">belvederedu65@gmail.com</a></strong></p>
+      <p><em>📆 Janvier à Décembre</em></p>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
