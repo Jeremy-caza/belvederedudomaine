@@ -293,18 +293,28 @@ html,body{overflow-x:hidden}
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.925654431989!2d0.28193437499192237!3d43.19007078226318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9cba66648e755%3A0x7f5bcb7256ee3d29!2sLe%20Belv%C3%A9d%C3%A8re%20du%20Domaine!5e0!3m2!1sfr!2sfr!4v1753635976674!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="form-area">
-        <form>
-          <label>Nom
-            <input type="text" name="nom" required>
-          </label>
-          <label>Email
-            <input type="email" name="email" required>
-          </label>
-          <label>Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button type="submit" class="btn">Envoyer</button>
-        </form>
+        <form action="https://formsubmit.co/belvederedu65@gmail.com" method="POST">
+  <!-- Champs visibles -->
+  <label>Nom
+    <input type="text" name="nom" required autocomplete="name">
+  </label>
+  <label>Email
+    <input type="email" name="email" required autocomplete="email">
+  </label>
+  <label>Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <button type="submit" class="btn">Envoyer</button>
+
+  <!-- Options FormSubmit -->
+  <input type="hidden" name="_subject" value="Nouveau message - Belvédère du Domaine">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Anti-spam (champ piège) -->
+  <input type="text" name="_honey" style="display:none">
+  <!-- Redirection après envoi (mets l’URL que tu veux) -->
+  <input type="hidden" name="_next" value="https://belvedere65.com/merci.html">
+</form>
         <div class="coords">
           <p><strong>📍 2 Chem. de la Lande, 65190 Tournay</strong></p>
           <p><strong>📞 <a href="tel:+33637210400">06 37 21 04 00</a></strong></p>
